@@ -16,6 +16,7 @@ class SceneFile(object):
                                   task=self.task,
                                   ver=self.ver,
                                   ext=self.ext)
-        
 
-   
+        @property
+        def path(self):
+            return self.folder_path / self.filename
